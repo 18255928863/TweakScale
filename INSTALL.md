@@ -18,14 +18,18 @@ To install, place the GameData folder inside your Kerbal Space Program folder:
 * If you **have** installed TweakableEverything:
 	+ `<PACKAGE>/GameData/TweakableEverything` --> `<KSP_ROOT>/GameData/TweakableEverything`
 	+ **Warning**: By reinstalling (or later installing) TweakableEverything, you will need to update TweakScale again!
-* If (and only if) you **do not** have installed the current release for the Dependencies:
-	+ `<PACKAGE>/GameData/ModuleManager.3.1.0.dll` --> `<KSP_ROOT>/GameData/ModuleManager.3.1.0.dll`
+* Extract the included dependencies (optional)
+	+ `<PACKAGE>/GameData/ModuleManagerWatchDog` --> `<KSP_ROOT>/GameData`
+	+ `<PACKAGE>/GameData/666_ModuleManagerWatchDog.dll` --> `<KSP_ROOT>/GameData`
+		- Overwrite any preexisting file.
 
 The following file layout must be present after installation:
 
 ```
 <KSP_ROOT>
 	[GameData]
+		[ModuleManagerWatchDog]
+			...
 		[TweakScale]
 			[Plugins]
 				KSPe.Light.TweakScale.dll
@@ -41,6 +45,7 @@ The following file layout must be present after installation:
 			ScaleExponents.cfg
 			TweakScale.version
 			documentation.txt
+		666_ModuleManagerWatchDog.dll
 		999_Scale_Redist.dll
 		ModuleManager.dll
 		...
@@ -55,7 +60,8 @@ The following file layout must be present after installation:
 * KSPe Light for TweakScale
 	+ Included
 	+ Licensed to TweakScale under [SKL 1.0](https://ksp.lisias.net/SKL-1_0.txt)
-* Module Manager 3.0.7 or later
+* [Module Manager Watch Dog](https://github.com/net-lisias-ksp/ModuleManagerWatchDog/releases)
 	+ Included
-		- Do not unzip this if you use my [Experimental fork](https://github.com/net-lisias-ksp/ModuleManager).
-
+	+ Licensed to TweakScale under [SKL 1.0](https://ksp.lisias.net/SKL-1_0.txt)
+* Module Manager 3.1.3 or later
+	+ **Not Included**
